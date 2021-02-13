@@ -9,4 +9,9 @@ use App\Http\Controllers\Controller as BaseController;
 class Controller extends BaseController
 {
     protected const PER_PAGE = 12;
+
+    public function __construct()
+    {
+        parent::__construct();
+    }
 }
