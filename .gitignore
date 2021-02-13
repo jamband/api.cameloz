@@ -1,0 +1,5 @@
+/.idea
+/database/app.db
+/vendor
+.env
+.env.backup

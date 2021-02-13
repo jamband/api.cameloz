@@ -1,0 +1,47 @@
+{
+  "require": {
+    "php": "^7.4.0",
+    "ext-json": "*",
+    "fideloper/proxy": "^4.4",
+    "fruitcake/laravel-cors": "^2.0",
+    "laravel/framework": "^8.27"
+  },
+  "require-dev": {
+    "brianium/paratest": "^6.2",
+    "facade/ignition": "^2.5",
+    "fakerphp/faker": "^1.13",
+    "mockery/mockery": "^1.4",
+    "nunomaduro/collision": "^5.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": []
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Database\\Factories\\": "database/factories/",
+      "Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ],
+    "dev": "@composer install && php artisan dev:init",
+    "clean": "@php artisan dev:clean && rm -rf vendor"
+  }
+}
