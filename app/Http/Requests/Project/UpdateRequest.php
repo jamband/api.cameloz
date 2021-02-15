@@ -49,7 +49,9 @@ class UpdateRequest extends FormRequest
      */
     public function save(Project $project): Project
     {
-        $project->name = $this->name;
+        $data = $this->validated();
+
+        $project->name = $data['name'];
         $project->save();
 
         return $project;

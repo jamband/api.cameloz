@@ -55,8 +55,10 @@ class CreateRequest extends FormRequest
      */
     public function save(): Project
     {
+        $data = $this->validated();
+
         $project = new Project;
-        $project->name = $this->name;
+        $project->name = $data['name'];
         $project->save();
 
         return $project;

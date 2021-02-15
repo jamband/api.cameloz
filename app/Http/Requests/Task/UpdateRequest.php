@@ -66,9 +66,11 @@ class UpdateRequest extends FormRequest
      */
     public function save(Task $task): Task
     {
-        $task->name = $this->name;
-        $task->priority_id = $this->priority_id;
-        $task->project_id = $this->project_id;
+        $data = $this->validated();
+
+        $task->name = $data['name'];
+        $task->priority_id = $data['priority_id'];
+        $task->project_id = $data['project_id'];
         $task->save();
 
         return $task;
