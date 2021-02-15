@@ -2,6 +2,10 @@
 
 api.cameloz is a project created as a documentation for the Backend API with Laravel.
 
+## Related repositories
+
+[Cameloz](https://github.com/jamband/cameloz) - Frontend with Nuxt
+
 ## Requirements for development environment
 
 - PHP >= 7.4
