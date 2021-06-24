@@ -4,14 +4,14 @@
     "ext-json": "*",
     "fideloper/proxy": "^4.4",
     "fruitcake/laravel-cors": "^2.0",
-    "laravel/framework": "^8.41"
+    "laravel/framework": "^8.48"
   },
   "require-dev": {
     "brianium/paratest": "^6.3",
-    "facade/ignition": "^2.9",
+    "facade/ignition": "^2.10",
     "fakerphp/faker": "^1.14",
     "mockery/mockery": "^1.4",
-    "nunomaduro/collision": "^5.4",
+    "nunomaduro/collision": "^5.5",
     "phpunit/phpunit": "^9.5"
   },
   "config": {
