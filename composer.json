@@ -4,12 +4,12 @@
     "ext-json": "*",
     "fideloper/proxy": "^4.4",
     "fruitcake/laravel-cors": "^2.0",
-    "laravel/framework": "^8.48"
+    "laravel/framework": "^8.49"
   },
   "require-dev": {
     "brianium/paratest": "^6.3",
     "facade/ignition": "^2.10",
-    "fakerphp/faker": "^1.14",
+    "fakerphp/faker": "^1.15",
     "mockery/mockery": "^1.4",
     "nunomaduro/collision": "^5.5",
     "phpunit/phpunit": "^9.5"
